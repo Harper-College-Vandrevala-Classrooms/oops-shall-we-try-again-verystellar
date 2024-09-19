@@ -1,4 +1,6 @@
-import com.csc.Menu;
+package com.driver;
+
+import com.csc.com.csc.Menu;
 
 public class Driver {
     public static void main(String[] args) {

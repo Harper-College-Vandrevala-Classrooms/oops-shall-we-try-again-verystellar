@@ -1,5 +1,4 @@
-package com.csc;
-import java.util.InputMismatchException;
+package com.csc.com.csc;
 import java.util.Scanner;
 // Your code goes here!
 public class Menu{
@@ -8,7 +7,7 @@ public class Menu{
         Scanner newScanner = new Scanner(System.in);
         boolean val = false;
         int num = 0;
-        while(val != true){
+        while(!val){
         System.out.println("Enter number between (" + b1 + "," + b2 + "): ");
         try { 
             String boo = newScanner.nextLine();
