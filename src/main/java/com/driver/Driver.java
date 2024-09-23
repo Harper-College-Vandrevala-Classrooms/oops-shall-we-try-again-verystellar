@@ -7,6 +7,7 @@ public class Driver {
         Menu myMenu = new Menu();
         myMenu.callMenu(1, 100);
         myMenu.callMenu(-10, 10);
+        myMenu.callMenu(-10, 10, 0);
     }
 
     
