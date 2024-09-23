@@ -8,9 +8,13 @@ public class Menu{
         boolean val = false;
         int num = 0;
         while(!val){
-        System.out.println("Enter number between (" + b1 + "," + b2 + "): ");
-        try { 
-            String boo = newScanner.nextLine();
+        System.out.println("Enter number between (" + b1 + "," + b2 + "), enter 'exit' to leave them menu: ");
+        String boo = newScanner.nextLine();
+        if(boo.equals("exit")){
+            throw new RuntimeException("Menu exited");
+
+        }
+            try {
             int i = Integer.valueOf(boo);
             if (i < b1 || i > b2) {
                 System.out.println("Value out of bounds\n");
@@ -23,7 +27,7 @@ public class Menu{
             }
         
         catch (NumberFormatException ex){
-            System.out.println("Invalid Value\n");
+                System.out.println("Invalid Value\n");
         }
         }
         return num;
